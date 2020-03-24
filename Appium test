@@ -1,0 +1,13 @@
+from appium import webdriver
+
+desired_cap = {
+  "deviceName": "Galaxy S8+",
+  "udid": "9888d3364b57325031",
+  "platformName": "Android",
+  "platformVersion": "9.0",
+  "browserName": "Chrome",
+  "automationName": "UiAutomator1",
+  "chromedriverExecutable": "C:/Users/awais/AppData/Local/Programs/Python/Python38/chromedriver.exe"}
+driver = webdriver.Remote("http://localhost:4723/wd/hub", desired_cap)
+driver.get("https://www.zoro.com")
+driver.find_element_by_xpath()
